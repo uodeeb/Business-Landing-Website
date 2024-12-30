@@ -1,0 +1,132 @@
+/*---------------------------------main--------------------------------*/
+.cont {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 7vh 23vh 40vh 20vh 10vh;
+  gap: 20px;
+
+  background-color: #f4f4f4;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.hero {
+  display: grid;
+  place-items: center;
+  background-color: #f4f4f4;
+  padding: 100px 20px;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+  background-image: url(../images/banner.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 50px;
+  padding: 1.2rem;
+}
+.hero h1 {
+  color: #fff;
+  text-shadow: #000 3px 1px 2px;
+}
+
+.hero button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+.card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  flex: 2;
+}
+.card img {
+  max-width: 50%;
+  height: auto;
+}
+button:hover {
+  background-color: #333;
+  color: #fff;
+}
+.about {
+  padding: 1.2rem;
+}
+
+.foot {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .cont {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 7vh 30vh 260vh 40vh 10vh;
+    gap: 20px;
+
+    background-color: #f4f4f4;
+  }
+  .head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+  }
+  .navbar {
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-list {
+    align-self: center;
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+  }
+
+  .logo {
+    flex: 2;
+  }
+  .cards {
+    flex-direction: column;
+  }
+}

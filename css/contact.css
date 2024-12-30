@@ -1,0 +1,44 @@
+.cont {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10vh 80vh 10vh;
+  gap: 20px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.logo img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 50px;
+  padding: 1.2rem;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.foot {
+  text-align: center;
+}
